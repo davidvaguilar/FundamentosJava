@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package InternaMetodo01;
+package com.santotomas.internametodo1103;
 
 public class Externa {
     int a=10;
