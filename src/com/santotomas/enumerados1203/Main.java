@@ -37,6 +37,9 @@ public class Main {
 
         System.out.println();
 
+        
+        
+        
         // Instanciamos el enumerado
         Equipo villareal = Equipo.VILLAREAL;
 
@@ -47,6 +50,10 @@ public class Main {
         System.out.println("villareal.getNombreClub()= "+villareal.getNombreClub());
         System.out.println("villareal.getPuestoLiga()= "+villareal.getPuestoLiga());
 
+        
+        
+        
+        
         Futbolista casillas = new Futbolista("Casillas", 1, Demarcacion.PORTERO, Equipo.REAL_MADRID);
         Futbolista capdevila = new Futbolista("Capdevila", 11, Demarcacion.DEFENSA, Equipo.VILLAREAL);
         Futbolista iniesta = new Futbolista("Iniesta", 6, Demarcacion.CENTROCAMPISTA, Equipo.BARÇA);

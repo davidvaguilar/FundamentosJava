@@ -17,6 +17,7 @@ public class Externa {
         Externa.InternaMiembro segundaClaseIntMiembro=new Externa.InternaMiembro();
         segundaClaseIntMiembro.metodo();
         primeraClaseIntMiembro.saludar();
+        segundaClaseIntMiembro.saludar();
     }
     class InternaMiembro{
         void metodo(){

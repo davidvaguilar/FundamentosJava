@@ -14,20 +14,11 @@ enum instrumentos{
 };
  
 public class Enumerados {
- 
    public Enumerados() {
    }
- 
    public static void main (String[] args){
       instrumentos in = instrumentos.BATERIA; 
       System.out.println(in);
-      EnumDentroClase edc = new EnumDentroClase();
-      edc.tamano = EnumDentroClase.TamanoDeCafe.CHICO;
-      System.out.println(edc.tamano);
    }
 }
  
-class EnumDentroClase{
-   enum TamanoDeCafe {GRANDE,MEDIANO,CHICO};
-   TamanoDeCafe tamano;
-}
