@@ -31,13 +31,12 @@ public class Estudiante extends Persona{
     }
     
     public Estudiante(String nombre, String apellido, String rut,
-            Curso curso, int dia, int mes, int anno){
+        Curso curso, int dia, int mes, int anno){
         this.nombre=nombre;
         this.apellido=apellido;
         this.rut=rut;
         this.curso=curso;
         matricula=new Fecha(dia, mes, anno);
-        
     }
     
     protected Curso getCurso(){
