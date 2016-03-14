@@ -11,7 +11,7 @@ package com.santotomas.enumerados1205;
  */
 public enum Precios {PRECIONORMAL(100), PRECIOVIP(80); 
      double precio;
-     Precios(double p){
+     private Precios(double p){
          precio = p;
      }
     public double getPrecio() {

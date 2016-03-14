@@ -18,21 +18,20 @@ public class Main {
 		
         Demarcacion delantero = Demarcacion.DELANTERO;
         Demarcacion defensa = Demarcacion.DEFENSA;
-
         // Devuelve un String con el nombre de la constante
         System.out.println("delantero.name()= "+delantero.name());
+        delantero.saludar();
         System.out.println("defensa.toString()= "+defensa.toString());
-
         //  Devuelve un entero con la posición de la constante según está declarada.
         System.out.println("delantero.ordinal()= "+delantero.ordinal());
-
+        System.out.println("defensa.ordinal()= "+defensa.ordinal());
         // Compara el enum con el parámetro según el orden en el que están declaradas las constantes. 
-        System.out.println("delantero.compareTo(defensa)= "+delantero.compareTo(defensa));
+        System.out.println("delantero.compareTo(defensa)= "+defensa.compareTo(defensa));
         System.out.println("delantero.compareTo(delantero)= "+delantero.compareTo(delantero));
 
         // Recorre todas las constantes de la enumeración
         for(Demarcacion d: Demarcacion.values()){
-                System.out.print(d.toString()+" - ");
+                System.out.print(d.name()+" - ");
         }
 
         System.out.println();

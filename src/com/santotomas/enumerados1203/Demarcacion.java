@@ -11,5 +11,9 @@ package com.santotomas.enumerados1203;
  */
 public enum Demarcacion
 {
-	PORTERO, DEFENSA, CENTROCAMPISTA, DELANTERO
+	PORTERO, DEFENSA, CENTROCAMPISTA, DELANTERO;
+        
+        public void saludar(){
+            System.out.println("Hola mundo");
+        }
 }

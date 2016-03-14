@@ -11,10 +11,18 @@ package com.santotomas.enumerados1204;
  */
 public class Main {
     
-    public enum Opcion {UNO, DOS, TRES, CUATRO}  
+    public enum Opcion {UNO, DOS, TRES, CUATRO,CINCO}  
  
     public static void main(String[] args) {
-        
+        Opcion a =Opcion.CUATRO;
+        Opcion b=Opcion.DOS;
+        if(b.name().equals("DOS")){
+            System.out.println("Son iguales");
+        }
+        for(Opcion i :Opcion.values()){
+            System.out.println(i.name());
+        }
+       
     }
     
 }

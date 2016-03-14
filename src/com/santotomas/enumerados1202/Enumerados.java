@@ -16,21 +16,11 @@ public class Enumerados {
     public static void main(String[] args) {
         Dia d; // declaramos una variable del tipo Dia
         d = Dia.DOMINGO; //asignamos un valor
-        if (d == Dia.DOMINGO || d == Dia.SABADO)  //comparamos valores
+        if (d == Dia.LUNES || d == Dia.SABADO)  //comparamos valores
             System.out.println("Estamos en fin de semana");
         else
             System.out.println("Aún no ha llegado el fin de semana");
-        switch (d) {  //ejemplo de switch
-            case LUNES:
-            case MARTES:
-            case MIERCOLES:
-            case JUEVES:
-            case VIERNES:
-                System.out.println("Aún no ha llegado el fin de semana");
-                break;
-            default:
-                System.out.println("Estamos en fin de semana");
-        }
+        
     }
     
 }

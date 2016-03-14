@@ -10,6 +10,7 @@ public class Externa {
     static int b=5;
     public void metodo(){
         final int x=0;
+      
         class InternaMetodo{
             void metodo(){
                 System.out.println(a);
