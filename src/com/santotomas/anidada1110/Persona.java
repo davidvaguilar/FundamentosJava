@@ -10,14 +10,60 @@ package com.santotomas.anidada1110;
  * @author David
  */
 public class Persona {
+    protected String rut;
     protected String nombre;
     protected String apellido;
-    protected String rut;
-  
-    Persona(){
-        this.nombre="Juan";
-        this.apellido="Perez";
-        this.rut="111-2";    
+
+    public Persona(String rut, String nombre, String apellido) {
+        this.rut = rut;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public Persona() {
+    }
+   
+    
+    /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * @return the apellido
+     */
+    public String getApellido() {
+        return apellido;
+    }
+
+    /**
+     * @return the rut
+     */
+    public String getRut() {
+        return rut;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    /**
+     * @param apellido the apellido to set
+     */
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    /**
+     * @param rut the rut to set
+     */
+    public void setRut(String rut) {
+        this.rut = rut;
     }
     
 }

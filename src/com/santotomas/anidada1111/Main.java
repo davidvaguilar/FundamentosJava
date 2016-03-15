@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.enumerados1205;
+package com.santotomas.anidada1111;
 
 /**
  *
@@ -11,7 +11,8 @@ package com.santotomas.enumerados1205;
  */
 public class Main {
     public static void main(String[] args) {
-        Precios p1=Precios.PRECIONORMAL;
-        System.out.println(p1.getPrecio());
+        Robot miRobot=new Robot(0);
+        System.out.println(miRobot.toString());
     }
+    
 }

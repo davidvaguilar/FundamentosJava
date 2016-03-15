@@ -11,4 +11,12 @@ package com.santotomas.enumerados1210;
  */
 public class Main {
     
+    public static void main(String[] args) {
+        TipoMadera madera=TipoMadera.CEREZO;
+        System.out.println(madera.getColor());
+        System.out.println(madera.getPesoEspecifico());
+    }
+    
+            
+    
 }

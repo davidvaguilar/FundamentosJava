@@ -14,8 +14,8 @@ public class Robot {
     private DescripcionRobot descripcion;
     
     public Robot (int x){
-        this.x=x;
-        this.descripcion=new DescripcionRobot();
+        this.x = x;
+        this.descripcion = new DescripcionRobot();
     }
     
     public class DescripcionRobot{
@@ -44,6 +44,7 @@ public class Robot {
     }
     
     public String toString(){
-        return "Robot ("+this.x+")";
+        return "Robot ("+this.x+")"+"\ntiene nombre : "+descripcion.nombre+
+                "\ntiene color : "+descripcion.color;
     }    
 }

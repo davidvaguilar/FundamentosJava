@@ -10,5 +10,21 @@ package com.santotomas.anidada1110;
  * @author David
  */
 public class Curso {
+    String curNombre;
+
+    public Curso(String curNombre) {
+        this.curNombre = curNombre;
+    }
+
+    public String getCurNombre() {
+        return curNombre;
+    }
+
+    @Override
+    public String toString() {
+        return "El curso del Alumno es : "+curNombre; //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
     
 }
