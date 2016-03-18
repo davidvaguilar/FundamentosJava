@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.enumerados1210;
+package com.santotomas.anidada1152;
 
 /**
  *
@@ -12,11 +12,7 @@ package com.santotomas.enumerados1210;
 public class Main {
     
     public static void main(String[] args) {
-        TipoMadera madera=TipoMadera.CEREZO;
-        System.out.println(madera.getColor());
-        System.out.println(madera.getPesoEspecifico());
+        App miApp=new App("Hola Mundo");
     }
-    
-            
-    
+
 }

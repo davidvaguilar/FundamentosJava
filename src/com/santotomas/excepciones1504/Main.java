@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.anidada1111;
+package com.santotomas.excepciones1504;
 
 /**
  *
  * @author David
  */
 public class Main {
-    public static void main(String[] args) {
-        Robot miRobot=new Robot(0);
-        System.out.println(miRobot.toString());
-    }
     
 }

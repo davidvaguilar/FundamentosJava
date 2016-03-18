@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.enumerados1211;
+package com.santotomas.enumerados1251;
 
 /**
  *

@@ -3,16 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.anidada1112;
+package com.santotomas.enumerados1251;
 
 /**
  *
  * @author David
  */
 public class Main {
-    
     public static void main(String[] args) {
-        App miApp=new App("Hola Mundo");
-    }
-
+        TipoLugar obj1= TipoLugar.BAR;
+        System.out.println(obj1.getRecurso());
+   }
 }
