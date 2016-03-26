@@ -14,7 +14,7 @@ public class Main {
         int x = 1;
         assert x > 0;
 
-        x = x + 1;
+       
         assert x > 1;
     }
 }

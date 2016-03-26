@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.aserciones1601;
+package com.santotomas.ejercicio0102;
 
 /**
  *
  * @author David
  */
-public class Main {
+public class Principal {
     public static void main(String[] args) {
-        String nombre=null;
-        assert nombre !=null; //ESTADO IDEAL
+        Triangulo tri1=new Triangulo(5, 2);
+        System.out.println(tri1.toString());
+                
     }
 }

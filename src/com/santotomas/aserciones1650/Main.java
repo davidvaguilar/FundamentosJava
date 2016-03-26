@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.aserciones1601;
+package com.santotomas.aserciones1650;
 
 /**
  *
@@ -11,7 +11,7 @@ package com.santotomas.aserciones1601;
  */
 public class Main {
     public static void main(String[] args) {
-        String nombre=null;
-        assert nombre !=null; //ESTADO IDEAL
+        Circulo cir=new Circulo(6);
+        System.out.println("El area del circulo es:"+cir.calcularArea());
     }
 }
