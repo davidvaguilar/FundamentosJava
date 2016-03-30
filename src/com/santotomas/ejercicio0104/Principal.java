@@ -15,16 +15,15 @@ public class Principal {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         Numero numerito1,numerito2;
-        int variable;
-        System.out.println("Ingresa un numero");
-        variable=input.nextInt();
-        numerito1=new Numero(variable);
-        
-        if(numerito1.esPositivo()){
-            System.out.println("Tu numero es positivo");
-        }else{
-            System.out.println("Tu Numero es negativo");
-        }
-        
+        int variable1, variable2;
+        String resultado;
+        System.out.println("Ingresa el primer numero");
+        variable1=input.nextInt(); 
+     
+        numerito1 = new Numero(variable1);
+      
+        //numerito1.obtenerDigito();
+       
+        System.out.println("La suma de todos los digitos es igual a= "+numerito1.sumaDigito());
     }
 }
