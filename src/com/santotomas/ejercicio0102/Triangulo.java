@@ -9,7 +9,7 @@ package com.santotomas.ejercicio0102;
  *
  * @author David
  */
-public class Triangulo {
+public class Triangulo{
     private int base;
     private int altura;
     
@@ -47,6 +47,17 @@ public class Triangulo {
         return "Este triangulo tiene como base"+this.base+
                 ", la altura es:"+this.altura+"y su area es de: "+
                 this.calcularArea();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Triangulo) {
+            Triangulo temp = (Triangulo)obj;
+            if(this.base==temp.getBase()&&this.altura==temp.getAltura()){
+                return( true );
+            }
+        }
+        return false;
     }
 
     
