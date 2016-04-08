@@ -20,31 +20,31 @@ import static org.junit.Assert.*;
  * @author David
  */
 public class CuentaTest {
-   
-    Persona p;
-    Cuenta c;
-    
+    Integer valor;
+    Persona per;
+    Cuenta cue;
+        
     public CuentaTest() {
         
     }
     
     @Test
-    public void depositarTestMethod() {
-        
-        Integer valor=0;
-        c.depositar(valor);
-        assertEquals(4999, c.getCueSaldo(),0.00);
+    public void girarTestMethod() {
+        System.out.println("Cuanto desea Girar");
+        valor=3500;
+        assertEquals(0, cue.girar(valor),0.00);
     }
     
     @Test
-    public void girarTestMethod() {
-      
-        Integer valor=-1;
-        c.girarBasico(valor);
-        assertEquals(5000, c.getCueSaldo(),0.00);
-        
+    public void depositoTestMethod() {
+        System.out.println("Cuanto desea Depositar");
+        valor=1000;
+        if(!cue.depositar(valor)){
+            System.out.println("Accion Denegada");
+        }
+        assertEquals(4500, cue.getCueSaldo(),0.00);
     }
-       
+    
     @BeforeClass
     public static void setUpClass() {
          
@@ -56,12 +56,24 @@ public class CuentaTest {
     
     @Before
     public void setUp() {
-       p=new Persona("1234-5","Pepito",20);
-       c=new Cuenta(5000,p);
+       
+        String rut,nombre;
+        Integer edad;
+        System.out.println("Programa Banco");
+        System.out.println("Ingresar el Rut del usuario");
+        rut="1234-5";
+        System.out.println("Ingresar el Nombre del usuario");
+        nombre="David";
+        System.out.println("Ingresar la edad del usuario");
+        edad=32;
+        per=new Persona(rut, nombre, edad);
+        System.out.println("Ingresar un saldo inicial de apertura de Cuenta");
+        cue=new Cuenta(3500, per);
     }
     
     @After
     public void tearDown() {
+        System.out.println(cue.getCueSaldo());
         System.out.println("HA TERMINADO EL PROGRAMA");
     }
 

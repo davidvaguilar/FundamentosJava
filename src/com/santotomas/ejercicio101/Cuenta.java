@@ -47,26 +47,6 @@ public class Cuenta {
         return this.cueSaldo;
     }
     
-    public Boolean depositarBasico(Integer valor){
-        this.cueSaldo=this.cueSaldo+valor;
-        return true;
-    }
-    
-    public Integer girarBasico(Integer valor){
-        if(valor>0){
-            if(this.cueSaldo>=valor){
-                this.cueSaldo=this.cueSaldo-valor;
-            }else{
-                System.out.println("No se puede sobre girar");
-            }
-            
-        }else{
-            System.out.println("Puede girar un valor positivo");
-        }
-        
-        return this.cueSaldo;
-    }
-
     public Integer getCueSaldo() {
         return cueSaldo;
     }
