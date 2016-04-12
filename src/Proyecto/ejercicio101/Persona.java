@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.ejercicio101;
+package proyecto.ejercicio101;
 
 /**
  *
@@ -22,7 +22,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return ("Rut: "+this.perRut +"Nombre: "+this.perNombre+ "Edad: "+this.perEdad);
+        return ("\tRut: "+this.perRut +"\t\nNombre: "+this.perNombre+ "\t\nEdad: "+this.perEdad);
     }
 
     @Override
@@ -33,7 +33,8 @@ public class Persona {
                 return( true );
             }
         }
-        return ( false );    }
+        return ( false );  
+    }
 
     public String getPerRut() {
         return perRut;

@@ -35,14 +35,14 @@ public class Circulo{
 
     @Override
     public String toString() {
-        return ("Este circulo tiene como radio" + this.radio);
+        return ("El radio del circulo es: " + this.radio);
     }
 
     @Override
     public boolean equals(Object obj) {
         if( (obj != null) && (obj instanceof Circulo) ) {
             Circulo temp = (Circulo)obj;
-            if(this.radio==temp.radio){
+            if(this.radio == temp.radio){
                 return( true );
             }
         }

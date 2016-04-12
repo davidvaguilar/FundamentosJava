@@ -5,8 +5,8 @@
  */
 package Ejercicio101;
 
-import com.santotomas.ejercicio101.Cuenta;
-import com.santotomas.ejercicio101.Persona;
+import proyecto.ejercicio101.Cuenta;
+import proyecto.ejercicio101.Persona;
 import java.util.Scanner;
 import org.junit.After;
 import org.junit.AfterClass;

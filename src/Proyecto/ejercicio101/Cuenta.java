@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.santotomas.ejercicio101;
+package proyecto.ejercicio101;
 
 /**
  *
@@ -20,6 +20,10 @@ public class Cuenta {
     public Cuenta(Integer cueSaldo, Persona per) {
         this.cueSaldo = cueSaldo;
         this.persona = per;
+    }
+    
+    public String consultarTitular(){
+        return (this.persona.toString());
     }
     
     public Boolean depositar(Integer valor){
@@ -66,11 +70,17 @@ public class Cuenta {
     
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return ("El saldo de la Cuenta es: "+this.cueSaldo);
     }
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj); //To change body of generated methods, choose Tools | Templates.
+        if( (obj != null) && (obj instanceof Cuenta) ) {
+            Cuenta temp = (Cuenta)obj;
+            if(this.cueSaldo.equals(temp.cueSaldo)){
+                return( true );
+            }
+        }
+        return ( false );  
     }
 }
